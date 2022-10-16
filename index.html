@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/7cbc2f9a60.js" crossorigin="anonymous"></script>
+
+    <style>
+         :root {
+            --primary-color: rgba(255, 255, 255, 0.5);
+        }
+        
+        body {
+            /* calc(var(--vh, 1vh) * 100); */
+            margin: 0%;
+            padding: 0%;
+            font-family: "Roboto", Arial, Helvetica, sans-serif;
+            overflow-x: hidden;
+        }
+        
+        .containerIndex {
+            background-image: url("/img/woodwalk.jpg");
+            height: 100vh;
+            width: calc(100vw - 17px);
+            /* width: calc(var(--vw, 1vh) * 100); */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: grid;
+            grid-template-rows: 100vh;
+            grid-template-columns: 1fr;
+            align-items: center;
+            justify-items: center;
+        }
+        
+        .darkglass {
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: grid;
+            grid-template-rows: 30% 40% 30%;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: center;
+            justify-items: center;
+        }
+        
+        .title {
+            font-size: 8vw;
+            font-weight: 900;
+            justify-items: center;
+            color: var(--primary-color);
+        }
+        
+        .phone {
+            font-size: 2.4vw;
+            font-weight: 400;
+            color: var(--primary-color);
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            align-self: end;
+            justify-self: start;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .email {
+            font-size: 2.4vw;
+            font-weight: 400;
+            color: var(--primary-color);
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            align-self: end;
+            justify-self: start;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .description {
+            font-size: 3.2vw;
+            font-weight: 400;
+            color: var(--primary-color);
+            margin-top: -2vw;
+        }
+        
+        .main {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 100%;
+            justify-items: center;
+        }
+        
+        .whatwedo {
+            width: 1000px;
+            height: 800px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 100px 700px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #f0f2f4;
+        }
+        
+        .whatwedo_title {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            justify-self: center;
+            align-self: center;
+            font-size: 50px;
+            color: black;
+        }
+        
+        .whatwedo_mission {
+            padding: 20px;
+            line-height: 24px;
+            font-weight: 300;
+            align-self: center;
+        }
+        
+        .whatwedo_items {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            align-self: center;
+            padding: 20px;
+        }
+        
+        .whatwedo_item {
+            display: grid;
+            grid-template-columns: 20% 80%;
+            grid-template-rows: 100px;
+        }
+        
+        .whatwedo_item_number {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        
+        .whatwedo_item_title {
+            font-size: 16px;
+            font-weight: 500;
+        }
+        
+        .whatwedo_item_text {
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: 300;
+        }
+        
+        .circlenumber {
+            color: red;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="containerIndex">
+        <div class="darkglass">
+            <div class="main">
+                <div class="title">Dakota Morrow</div>
+                <div class="description">Immersive Web Design</div>
+            </div>
+
+            <div class="phone">509.730.3716</div>
+            <div class="email">DakotaMorrow1976@gmail.com</div>
+        </div>
+    </div>
+
+    <div class="whatwedo">
+        <div class="whatwedo_title">What We Do</div>
+        <div class="whatwedo_mission">
+            We started our web design journey in 2016 and have since branched out to help create as many amazing websites as possible. We now rank as one of the top web design companies in the USA. Our dedication to amazing web design sets us apart. We do projects
+            all over the United States and Western Europe. Caveni always strives to achieve excellence in all of our designs. Take some time to look at our projects, we are sure you will be impressed!
+        </div>
+        <div class="whatwedo_items">
+            <div class="whatwedo_item">
+                <div class="whatwedo_item_number">1</div>
+                <div>
+                    <div class="whatwedo_item_title">Evaluate</div>
+                    <div class="whatwedo_item_text">
+                        We research the methods that would work best for your project and come up with a detailed plan on how to move forward.
+                    </div>
+                </div>
+            </div>
+            <div class="whatwedo_item">
+                <div class="whatwedo_item_number">1</div>
+                <div>This is text for number 1</div>
+            </div>
+            <div class="whatwedo_item">
+                <div class="whatwedo_item_number">1</div>
+                <div>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+            <div class="whatwedo_item">
+                <div class="whatwedo_item_number">1</div>
+                <div>This is text for number 1</div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    window.onload = function() {
+        var scrollbarWidth =
+            window.innerWidth - document.documentElement.clientWidth;
+        var widthWithoutScrollbar = document.documentElement.clientWidth;
+        var widthWithScrollbar = window.innerWidth;
+        console.log(scrollbarWidth);
+        console.log(
+            `Scrollbar ${scrollbarWidth} without ${widthWithoutScrollbar} with ${widthWithScrollbar}`
+        );
+
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty("--vh", `${vh}px`);
+
+        let vw = window.innerWidth * 0.01;
+        document.documentElement.style.setProperty("--vw", `${vw}px`);
+    };
+</script>
+
+</html>
