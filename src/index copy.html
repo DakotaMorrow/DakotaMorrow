@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dakota Morrow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/7cbc2f9a60.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      :root {
+        --primary-color: rgba(255, 255, 255, 0.5);
+        --fullHeight: calc(var(--vh, 1vh) * 100);
+        --fullWidth: calc(var(--vw, 1vw) * 100);
+      }
+
+      body {
+        /* calc(var(--vh, 1vh) * 100); */
+        margin: 0%;
+        padding: 0%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        overflow-x: hidden;
+      }
+
+      .containerIndex {
+        background-image: url("img/woodwalk.jpg");
+        height: var(--fullHeight);
+        width: var(--fullWidth);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        grid-template-rows: 30% 40% 30%;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        align-items: center;
+        justify-items: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        background-blend-mode: multiply;
+      }
+
+      .title {
+        font-size: 8vw;
+        font-weight: 900;
+        justify-items: center;
+        color: var(--primary-color);
+      }
+
+      .phone {
+        font-size: 2.4vw;
+        font-weight: 400;
+        color: var(--primary-color);
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        align-self: end;
+        justify-self: start;
+        margin-left: 20px;
+        margin-bottom: 20px;
+      }
+
+      .email {
+        font-size: 2.4vw;
+        font-weight: 400;
+        color: var(--primary-color);
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        align-self: end;
+        justify-self: start;
+        margin-right: 20px;
+        margin-bottom: 20px;
+      }
+
+      .description {
+        font-size: 3.2vw;
+        font-weight: 400;
+        color: var(--primary-color);
+        margin-top: -2vw;
+      }
+
+      .main {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        justify-items: center;
+      }
+
+      .containerPortfolio {
+        width: var(--fullWidth);
+        display: grid;
+        align-items: center;
+        justify-items: center;
+      }
+
+      .portfolioWebPages {
+        width: clamp(600px, 80vw, 1920px);
+        /* background-color: #c0c0c0; */
+        display: flex;
+        gap: 70px;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 200px;
+      }
+
+      .portfolioWebPage {
+        width: 400px;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 5px 3px 11px rgba(0, 0, 0, 0.3);
+        transition: transform 250ms ease-in-out 0ms,
+          height 250ms ease-in-out 0ms;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0);
+        background-blend-mode: multiply;
+      }
+
+      .portfolioWebPage:hover {
+        transform: translateY(-5px) scale(1.1);
+      }
+
+      @media screen and (max-width: 600px) {
+        .containerIndex {
+          display: grid;
+          grid-template-rows: 30% 40% 30%;
+          grid-template-columns: 1fr;
+        }
+        .containerPortfolio {
+          width: var(--fullWidth);
+          display: grid;
+          align-items: center;
+          justify-items: center;
+        }
+        .portfolioWebPages {
+          width: 90%;
+          display: flex;
+          gap: 70px;
+          align-content: center;
+          justify-content: center;
+          flex-wrap: wrap;
+          margin-top: 200px;
+          background-color: rgba(0, 0, 0, 0);
+          background-blend-mode: multiply;
+        }
+        .portfolioWebPage {
+          width: 90vw;
+          height: 45vw;
+          background-position: center;
+          background-size: cover;
+          box-shadow: 5px 3px 11px rgba(0, 0, 0, 0.3);
+          transition: transform 250ms ease-in-out 0ms,
+            height 250ms ease-in-out 0ms;
+          position: relative;
+          background-color: rgba(0, 0, 0, 0);
+          background-blend-mode: multiply;
+        }
+        .title {
+          font-size: 10vw;
+          font-weight: 900;
+          justify-items: center;
+          color: var(--primary-color);
+        }
+        .description {
+          font-size: 4vw;
+          font-weight: 400;
+          color: var(--primary-color);
+          margin-top: -2vw;
+        }
+        .phone {
+          font-size: 2.4vw;
+          font-weight: 400;
+          color: var(--primary-color);
+          align-items: center;
+          justify-self: center;
+        }
+        .email {
+          font-size: 2.4vw;
+          font-weight: 400;
+          color: var(--primary-color);
+          align-items: center;
+          justify-self: center;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="containerIndex">
+      <div class="main">
+        <div class="title">Dakota Morrow</div>
+        <div class="description">Immersive Web Design</div>
+      </div>
+
+      <div class="phone">509.730.3716</div>
+      <div class="email">DakotaMorrow1976@gmail.com</div>
+    </div>
+
+    <div class="containerPortfolio">
+      <div class="portfolioWebPages">
+        <div
+          class="portfolioWebPage"
+          style="background-image: url('img/MilitaryWebsite.jpg')"
+        ></div>
+        <div
+          class="portfolioWebPage"
+          style="background-image: url('img/BlackMoonBrewing.jpg')"
+        ></div>
+        <div
+          class="portfolioWebPage"
+          style="background-image: url('img/CafeWebsite.jpg')"
+        ></div>
+        <div class="portfolioWebPage"></div>
+      </div>
+    </div>
+  </body>
+  <script>
+    window.onload = function () {
+      showWidthHeight();
+      window.addEventListener("resize", () => {
+        showWidthHeight();
+      });
+    };
+
+    function showWidthHeight() {
+      let windowInnerWidth = window.innerWidth;
+      let windowInnerHeight = window.innerHeight;
+      let elementClientWidth = document.documentElement.clientWidth;
+      let elementClientHeight = document.documentElement.clientHeight;
+      let elementOffsetWidth = document.documentElement.offsetWidth;
+      let elementOffsetHeight = document.documentElement.offsetHeight;
+      let pageBreak = "</br>";
+      let elementInfo = document.getElementById("Info");
+
+      let vh = windowInnerHeight * 0.01;
+      document.documentElement.style.setProperty("--vh", `${vh}px`);
+      let vw = elementClientWidth * 0.01;
+      document.documentElement.style.setProperty("--vw", `${vw}px`);
+    }
+  </script>
+</html>
