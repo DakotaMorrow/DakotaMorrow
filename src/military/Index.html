@@ -240,7 +240,11 @@
       }
 
       function showIntro() {
-        elementIntroMessage.innerHTML = "The Bold, The Brave";
+        if (document.documentElement.clientWidth > 600) {
+          elementIntroMessage.innerHTML = "The Bold, The Brave";
+        } else {
+          elementIntroMessage.innerHTML = "The Bold The Brave";
+        }
       }
 
       function hideIntroMessage() {
