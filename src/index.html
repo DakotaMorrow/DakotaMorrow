@@ -11,10 +11,19 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <!-- <script
-      src="https://kit.fontawesome.com/7cbc2f9a60.js"
-      crossorigin="anonymous"
-    ></script> -->
+
+    <script defer src="./fontawesome/js/brands.js"></script>
+    <script defer src="./fontawesome/js/duotone.js"></script>
+    <script defer src="./fontawesome/js/light.js"></script>
+    <script defer src="./fontawesome/js/regular.js"></script>
+    <script defer src="./fontawesome/js/sharp-regular.js"></script>
+    <script defer src="./fontawesome/js/sharp-solid.js"></script>
+    <script defer src="./fontawesome/js/solid.js"></script>
+    <script defer src="./fontawesome/js/thin.js"></script>
+
+    <!-- Keep the FontAwesome file below. -->
+
+    <script defer src="./fontawesome/js/fontawesome.js"></script>
 
     <style>
       :root {
@@ -104,6 +113,18 @@
         justify-items: center;
       }
 
+      .aboutInfo {
+        width: clamp(300px, 80vw, 1080px);
+        display: grid;
+        grid-template-rows: 1;
+        grid-template-columns: 40px 1fr;
+        font-size: 20px;
+        font-weight: 400;
+        color: black;
+        line-height: 150%;
+        margin-top: 70px;
+      }
+
       .portfolioWebPages {
         width: clamp(600px, 80vw, 1920px);
         display: flex;
@@ -111,12 +132,12 @@
         align-content: center;
         justify-content: center;
         flex-wrap: wrap;
-        margin-top: 200px;
+        margin-top: 70px;
       }
 
       .portfolioWebPage {
-        width: 400px;
-        height: 200px;
+        width: 600px;
+        height: 300px;
         background-position: center;
         background-size: cover;
         box-shadow: 5px 3px 11px rgba(0, 0, 0, 0.3);
@@ -159,7 +180,7 @@
           align-content: center;
           justify-content: center;
           flex-wrap: wrap;
-          margin-top: 200px;
+          /* margin-top: 200px; */
           background-color: rgba(0, 0, 0, 0);
           background-blend-mode: multiply;
         }
@@ -237,6 +258,11 @@
         color: var(--primary-color);
         text-decoration: none;
       }
+
+      .infoBox {
+        font-size: 100px;
+        color: black;
+      }
     </style>
   </head>
 
@@ -262,7 +288,82 @@
       </div>
     </div>
 
+    <!-- <style>
+      .aboutInfo {
+        width: clamp(360px, 50vw, 800px);
+        font-size: 20px;
+        font-weight: 300;
+        color: black;
+        line-height: 150%;
+        margin-top: 00px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 0 50px 0 50px;
+        box-sizing: border-box;
+      }
+
+      .containerPortfolio {
+        width: var(--fullWidth);
+        display: grid;
+        grid-template-columns: repeat(2, clamp(360px, 50vw, 800px));
+        grid-template-rows: 1fr;
+        align-items: start;
+        justify-items: center;
+        margin-top: 70px;
+      }
+
+      .portfolioWebPages {
+        width: 90%;
+        display: flex;
+        gap: 70px;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 0px;
+        background-color: rgba(0, 0, 0, 0);
+        background-blend-mode: multiply;
+      }
+
+      .portfolioWebPage {
+        width: 40vw;
+        height: 20vw;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 5px 3px 11px rgba(0, 0, 0, 0.3);
+        transition: transform 250ms ease-in-out 0ms,
+          height 250ms ease-in-out 0ms;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0);
+        background-blend-mode: multiply;
+      }
+    </style> -->
+
     <div class="containerPortfolio">
+      <div class="aboutInfo">
+        <i class="fa-light" style="margin-top: 6px; font-size: 30px"
+          >&#xf30f;</i
+        >
+        <div>
+          <div>
+            Our web design business offers a range of professional web design
+            services that prioritize creating immersive and visually appealing
+            websites for clients. Our team is skilled in using clean typography,
+            abundant white space, and high-quality graphics to create designs
+            that are both modern and engaging.
+          </div>
+
+          <div style="margin-top: 40px">
+            In addition to the design services, we also provide hosting
+            solutions in various major cloud providers. This means that our
+            clients can have their website hosted on a reliable and secure
+            platform, while also benefitting from our expertise in web design.
+            With a focus on quality and attention to detail, our web design
+            business is well-positioned to help clients create a strong online
+            presence and stand out in their industry.
+          </div>
+        </div>
+      </div>
       <div class="portfolioWebPages">
         <a
           href="military/Index.html"
@@ -288,9 +389,7 @@
   <script>
     window.onload = function () {
       showWidthHeight();
-      window.showWidthHeight("resize", () => {
-        showWidthHeight2();
-      });
+      window.addEventListener("resize", showWidthHeight);
     };
 
     function showWidthHeight() {
