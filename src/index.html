@@ -154,7 +154,7 @@
 
       .portfolioWebPage {
         width: 600px;
-        height: 300px;
+        height: 335px;
         background-position: center;
         background-size: cover;
         box-shadow: 5px 3px 11px rgba(0, 0, 0, 0.3);
@@ -175,6 +175,26 @@
 
       .mobileLandingPage {
         display: none;
+      }
+      .printingPortfolio {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        background-color: aqua;
+      }
+      .printingInfo {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-family: avenir;
+        font-size: 60px;
+        font-weight: 400;
       }
 
       @media screen and (max-width: 600px) {
@@ -305,56 +325,13 @@
       </div>
     </div>
 
-    <!-- <style>
-      .aboutInfo {
-        width: clamp(360px, 50vw, 800px);
-        font-size: 20px;
-        font-weight: 300;
-        color: black;
-        line-height: 150%;
-        margin-top: 00px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        padding: 0 50px 0 50px;
-        box-sizing: border-box;
-      }
-
-      .containerPortfolio {
-        width: var(--fullWidth);
-        display: grid;
-        grid-template-columns: repeat(2, clamp(360px, 50vw, 800px));
-        grid-template-rows: 1fr;
-        align-items: start;
-        justify-items: center;
-        margin-top: 70px;
-      }
-
-      .portfolioWebPages {
-        width: 90%;
-        display: flex;
-        gap: 70px;
-        align-content: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin-top: 0px;
-        background-color: rgba(0, 0, 0, 0);
-        background-blend-mode: multiply;
-      }
-
-      .portfolioWebPage {
-        width: 40vw;
-        height: 20vw;
-        background-position: center;
-        background-size: cover;
-        box-shadow: 5px 3px 11px rgba(0, 0, 0, 0.3);
-        transition: transform 250ms ease-in-out 0ms,
-          height 250ms ease-in-out 0ms;
-        position: relative;
-        background-color: rgba(0, 0, 0, 0);
-        background-blend-mode: multiply;
-      }
-    </style> -->
+    <div class="printingPortfolio">
+      <div class="printingInfo">Business Cards</div>
+      <div class="printingInfo">Banners</div>
+      <div class="printingInfo">Pamphlets</div>
+      <div class="printingInfo"></div>
+      <div class="printingInfo"></div>
+    </div>
 
     <div class="containerPortfolio">
       <div class="aboutInfo">
@@ -393,9 +370,24 @@
           style="background-image: url('img/BlackMoonBrewing.jpg')"
         ></a>
         <a
+          href="sandrasSoap/index.html"
+          class="portfolioWebPage"
+          style="background-image: url('img/sandrasSoaps.jpg')"
+        ></a>
+        <a
           href="coffeeCafe/index.html"
           class="portfolioWebPage"
           style="background-image: url('img/CafeWebsite.jpg')"
+        ></a>
+        <a
+          href="coffeeCafe/index.html"
+          class="portfolioWebPage"
+          style="background-image: url('img/plumbing.jpg')"
+        ></a>
+        <a
+          href="coffeeCafe/index.html"
+          class="portfolioWebPage"
+          style="background-image: url('img/motorcyclePage.jpg')"
         ></a>
 
         <div class="portfolioWebPage"></div>
